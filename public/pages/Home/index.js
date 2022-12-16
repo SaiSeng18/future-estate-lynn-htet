@@ -11,3 +11,11 @@ scrollR.reveal(`.feature`, {
 	reset: true,
 	easing: "ease-out",
 });
+
+scrollR.reveal(`.choose`, {
+	origin: "top",
+	interval: 300,
+	delay: 300,
+	reset: true,
+	easing: "ease-out",
+});

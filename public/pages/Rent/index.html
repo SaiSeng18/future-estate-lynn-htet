@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Future Residency Limited</title>
+		<link rel="stylesheet" href="../../css/styles.css" />
+	</head>
+	<body>
+		<header-component></header-component>\
+		<div class="w-full px-2 py-5 bg-gray-100">
+			<div class="grid grid-cols-1 gap-5 mx-auto md:grid-cols-3 max-w-7xl">
+				<!-- Filter -->
+				<div class="hidden w-full p-5 bg-white rounded-sm shadow-sm h-fit md:block">
+					<!-- Buttons -->
+					<div class="flex items-center justify-between w-full mb-5">
+						<button class="w-20 h-10 rounded-md focus:text-white focus:bg-blue-500">
+							<a href="/public/pages/Buy/index.html">Buy</a>
+						</button>
+						<button class="w-20 h-10 rounded-md focus:text-white focus:bg-blue-500">
+							<a href="/public/pages/Buy/index.html">Sell</a>
+						</button>
+						<button class="w-20 h-10 text-white bg-blue-500 rounded-md">Rent</button>
+						<button class="w-20 h-10 rounded-md focus:text-white focus:bg-blue-500">
+							<a href="/public/pages/Hire/index.html">More</a>
+						</button>
+					</div>
+
+					<!-- Search -->
+					<div class="relative flex items-center w-full gap-2">
+						<input
+							type="text"
+							id="name"
+							class="w-full border rounded-sm h-9 sm:h-10 focus:outline-blue-500" />
+						<div
+							class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
+							<svg
+								class="w-5 h-5 fill-blue-500"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 512 512">
+								<!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+								<path
+									d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+							</svg>
+						</div>
+					</div>
+					<div class="my-10 divider"></div>
+
+					<!-- Property Type -->
+					<div class="flex flex-col gap-5">
+						<h1 class="text-gray-400">Property Type</h1>
+						<div class="grid grid-cols-2 gap-5">
+							<button
+								class="relative flex items-center justify-center h-12 duration-300 rounded-sm focus:bg-gray-200 bg-gray-50 group">
+								<svg
+									class="absolute h-6 duration-300 opacity-0 left-5 group-focus:opacity-100"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 50 50"
+									fill="none">
+									<path
+										d="M25 4.16667C13.5416 4.16667 4.16663 13.5417 4.16663 25C4.16663 36.4583 13.5416 45.8333 25 45.8333C36.4583 45.8333 45.8333 36.4583 45.8333 25C45.8333 13.5417 36.4583 4.16667 25 4.16667ZM20.8333 35.4167L10.4166 25L13.3541 22.0625L20.8333 29.5208L36.6458 13.7083L39.5833 16.6667L20.8333 35.4167Z"
+										fill="#3B82F6" />
+								</svg>
+								House
+							</button>
+							<button
+								class="relative flex items-center justify-center h-12 duration-300 rounded-sm focus:bg-gray-200 bg-gray-50 group">
+								<svg
+									class="absolute h-6 duration-300 opacity-0 left-5 group-focus:opacity-100"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 50 50"
+									fill="none">
+									<path
+										d="M25 4.16667C13.5416 4.16667 4.16663 13.5417 4.16663 25C4.16663 36.4583 13.5416 45.8333 25 45.8333C36.4583 45.8333 45.8333 36.4583 45.8333 25C45.8333 13.5417 36.4583 4.16667 25 4.16667ZM20.8333 35.4167L10.4166 25L13.3541 22.0625L20.8333 29.5208L36.6458 13.7083L39.5833 16.6667L20.8333 35.4167Z"
+										fill="#3B82F6" />
+								</svg>
+								Apartment
+							</button>
+							<button
+								class="relative flex items-center justify-center h-12 duration-300 rounded-sm focus:bg-gray-200 bg-gray-50 group">
+								<svg
+									class="absolute h-6 duration-300 opacity-0 left-5 group-focus:opacity-100"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 50 50"
+									fill="none">
+									<path
+										d="M25 4.16667C13.5416 4.16667 4.16663 13.5417 4.16663 25C4.16663 36.4583 13.5416 45.8333 25 45.8333C36.4583 45.8333 45.8333 36.4583 45.8333 25C45.8333 13.5417 36.4583 4.16667 25 4.16667ZM20.8333 35.4167L10.4166 25L13.3541 22.0625L20.8333 29.5208L36.6458 13.7083L39.5833 16.6667L20.8333 35.4167Z"
+										fill="#3B82F6" />
+								</svg>
+								Mansion
+							</button>
+							<button
+								class="relative flex items-center justify-center h-12 duration-300 rounded-sm focus:bg-gray-200 bg-gray-50 group">
+								<svg
+									class="absolute h-6 duration-300 opacity-0 left-5 group-focus:opacity-100"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 50 50"
+									fill="none">
+									<path
+										d="M25 4.16667C13.5416 4.16667 4.16663 13.5417 4.16663 25C4.16663 36.4583 13.5416 45.8333 25 45.8333C36.4583 45.8333 45.8333 36.4583 45.8333 25C45.8333 13.5417 36.4583 4.16667 25 4.16667ZM20.8333 35.4167L10.4166 25L13.3541 22.0625L20.8333 29.5208L36.6458 13.7083L39.5833 16.6667L20.8333 35.4167Z"
+										fill="#3B82F6" />
+								</svg>
+								Cottage
+							</button>
+						</div>
+					</div>
+
+					<!-- Price Range -->
+					<div class="flex flex-col gap-5 mt-10">
+						<h1 class="text-gray-400">Price Range</h1>
+						<div>
+							<label for="amountRange" class="text-gray-400">Minimum</label>
+							<input
+								name="amountRange"
+								id="amountRange"
+								type="range"
+								min="0"
+								max="20000"
+								value="40"
+								step="500"
+								oninput="amountInput.value=amountRange.value"
+								class="range range-xs range-primary" />
+							<input
+								type="text"
+								name="amountInput"
+								id="amountInput"
+								oninput="amountRange.value=amountInput.value"
+								disabled />
+						</div>
+						<div>
+							<label for="amountRange" class="text-gray-400">Maximum</label>
+							<input
+								name="maxAmountRange"
+								id="maxAmountRange"
+								type="range"
+								min="0"
+								max="20000"
+								value="40"
+								step="500"
+								oninput="maxAmountInput.value=maxAmountRange.value"
+								class="range range-xs range-primary" />
+							<input
+								type="text"
+								name="maxAmountInput"
+								id="maxAmountInput"
+								oninput="maxAmountRange.value=maxAmountInput.value"
+								disabled />
+						</div>
+					</div>
+
+					<!-- Number of Rooms -->
+					<div class="flex flex-col gap-5 mt-10">
+						<h1 class="text-gray-400">Rooms</h1>
+						<div class="flex flex-col gap-5">
+							<div>
+								<p class="text-gray-400">Bedrooms</p>
+								<div class="flex flex-wrap justify-between">
+									<button
+										class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+										1
+									</button>
+									<button
+										class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+										2
+									</button>
+									<button
+										class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+										3
+									</button>
+									<button
+										class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+										4
+									</button>
+									<button
+										class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+										5
+									</button>
+								</div>
+							</div>
+							<div>
+								<p class="text-gray-400">Bathrooms</p>
+								<div class="flex flex-wrap justify-between">
+									<button
+										class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+										1
+									</button>
+									<button
+										class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+										2
+									</button>
+									<button
+										class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+										3
+									</button>
+									<button
+										class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+										4
+									</button>
+									<button
+										class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+										5
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Amenities -->
+
+					<div class="flex flex-col gap-5 mt-10">
+						<h1 class="text-gray-400">Amenities</h1>
+						<div class="flex flex-col">
+							<label class="justify-start gap-5 cursor-pointer label">
+								<input
+									type="checkbox"
+									checked="checked"
+									class="checkbox checkbox-primary" />
+								<span class="label-text">Shared Accommodation</span>
+							</label>
+							<label class="justify-start gap-5 cursor-pointer label">
+								<input
+									type="checkbox"
+									checked="checked"
+									class="checkbox checkbox-primary" />
+								<span class="label-text">Pet Allowed</span>
+							</label>
+							<label class="justify-start gap-5 cursor-pointer label">
+								<input
+									type="checkbox"
+									checked="checked"
+									class="checkbox checkbox-primary" />
+								<span class="label-text">Security</span>
+							</label>
+							<label class="justify-start gap-5 cursor-pointer label">
+								<input
+									type="checkbox"
+									checked="checked"
+									class="checkbox checkbox-primary" />
+								<span class="label-text">Lift</span>
+							</label>
+							<label class="justify-start gap-5 cursor-pointer label">
+								<input
+									type="checkbox"
+									checked="checked"
+									class="checkbox checkbox-primary" />
+								<span class="label-text">Hot Tub</span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="grid grid-cols-1 col-span-1 gap-5 md:col-span-2 lg:grid-cols-2 h-fit">
+					<div class="flex justify-end w-full h-6 md:hidden">
+						<svg
+							id="toggle"
+							xmlns="http://www.w3.org/2000/svg"
+							className="h-6 w-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							strokeWidth="{2}">
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+						</svg>
+					</div>
+					<div
+						id="hidden"
+						class="flex-col hidden w-full p-5 overflow-hidden duration-500 ease-in-out bg-white rounded-sm shadow-sm md:hidden">
+						<!-- Buttons -->
+						<div class="flex items-center justify-between w-full mb-5">
+							<button class="w-20 h-10 rounded-md focus:text-white focus:bg-blue-500">
+								<a href="/public/pages/Buy/index.html">Buy</a>
+							</button>
+							<button class="w-20 h-10 rounded-md focus:text-white focus:bg-blue-500">
+								<a href="/public/pages/Buy/index.html">Sell</a>
+							</button>
+							<button class="w-20 h-10 text-white bg-blue-500 rounded-md">Rent</button>
+							<button class="w-20 h-10 rounded-md focus:text-white focus:bg-blue-500">
+								<a href="/public/pages/Hire/index.html">More</a>
+							</button>
+						</div>
+
+						<!-- Search -->
+						<div class="relative flex items-center w-full gap-2">
+							<input
+								type="text"
+								id="name"
+								class="w-full border rounded-sm h-9 sm:h-10 focus:outline-blue-500" />
+							<div
+								class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
+								<svg
+									class="w-5 h-5 fill-blue-500"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512">
+									<!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+								</svg>
+							</div>
+						</div>
+						<div class="my-10 divider"></div>
+
+						<!-- Property Type -->
+						<div class="flex flex-col gap-5">
+							<h1 class="text-gray-400">Property Type</h1>
+							<div class="grid grid-cols-2 gap-5">
+								<button
+									class="relative flex items-center justify-center h-12 duration-300 rounded-sm focus:bg-gray-200 bg-gray-50 group">
+									<svg
+										class="absolute h-6 duration-300 opacity-0 left-5 group-focus:opacity-100"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 50 50"
+										fill="none">
+										<path
+											d="M25 4.16667C13.5416 4.16667 4.16663 13.5417 4.16663 25C4.16663 36.4583 13.5416 45.8333 25 45.8333C36.4583 45.8333 45.8333 36.4583 45.8333 25C45.8333 13.5417 36.4583 4.16667 25 4.16667ZM20.8333 35.4167L10.4166 25L13.3541 22.0625L20.8333 29.5208L36.6458 13.7083L39.5833 16.6667L20.8333 35.4167Z"
+											fill="#3B82F6" />
+									</svg>
+									House
+								</button>
+								<button
+									class="relative flex items-center justify-center h-12 duration-300 rounded-sm focus:bg-gray-200 bg-gray-50 group">
+									<svg
+										class="absolute h-6 duration-300 opacity-0 left-5 group-focus:opacity-100"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 50 50"
+										fill="none">
+										<path
+											d="M25 4.16667C13.5416 4.16667 4.16663 13.5417 4.16663 25C4.16663 36.4583 13.5416 45.8333 25 45.8333C36.4583 45.8333 45.8333 36.4583 45.8333 25C45.8333 13.5417 36.4583 4.16667 25 4.16667ZM20.8333 35.4167L10.4166 25L13.3541 22.0625L20.8333 29.5208L36.6458 13.7083L39.5833 16.6667L20.8333 35.4167Z"
+											fill="#3B82F6" />
+									</svg>
+									Apartment
+								</button>
+								<button
+									class="relative flex items-center justify-center h-12 duration-300 rounded-sm focus:bg-gray-200 bg-gray-50 group">
+									<svg
+										class="absolute h-6 duration-300 opacity-0 left-5 group-focus:opacity-100"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 50 50"
+										fill="none">
+										<path
+											d="M25 4.16667C13.5416 4.16667 4.16663 13.5417 4.16663 25C4.16663 36.4583 13.5416 45.8333 25 45.8333C36.4583 45.8333 45.8333 36.4583 45.8333 25C45.8333 13.5417 36.4583 4.16667 25 4.16667ZM20.8333 35.4167L10.4166 25L13.3541 22.0625L20.8333 29.5208L36.6458 13.7083L39.5833 16.6667L20.8333 35.4167Z"
+											fill="#3B82F6" />
+									</svg>
+									Mansion
+								</button>
+								<button
+									class="relative flex items-center justify-center h-12 duration-300 rounded-sm focus:bg-gray-200 bg-gray-50 group">
+									<svg
+										class="absolute h-6 duration-300 opacity-0 left-5 group-focus:opacity-100"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 50 50"
+										fill="none">
+										<path
+											d="M25 4.16667C13.5416 4.16667 4.16663 13.5417 4.16663 25C4.16663 36.4583 13.5416 45.8333 25 45.8333C36.4583 45.8333 45.8333 36.4583 45.8333 25C45.8333 13.5417 36.4583 4.16667 25 4.16667ZM20.8333 35.4167L10.4166 25L13.3541 22.0625L20.8333 29.5208L36.6458 13.7083L39.5833 16.6667L20.8333 35.4167Z"
+											fill="#3B82F6" />
+									</svg>
+									Cottage
+								</button>
+							</div>
+						</div>
+
+						<!-- Price Range -->
+						<div class="flex flex-col gap-5 mt-10">
+							<h1 class="text-gray-400">Price Range</h1>
+							<div>
+								<label for="amountRange" class="text-gray-400">Minimum</label>
+								<input
+									name="amountRange"
+									id="amountRange"
+									type="range"
+									min="0"
+									max="20000"
+									value="40"
+									step="500"
+									oninput="amountInput.value=amountRange.value"
+									class="range range-xs range-primary" />
+								<input
+									type="text"
+									name="amountInput"
+									id="amountInput"
+									oninput="amountRange.value=amountInput.value"
+									disabled />
+							</div>
+							<div>
+								<label for="amountRange" class="text-gray-400">Maximum</label>
+								<input
+									name="maxAmountRange"
+									id="maxAmountRange"
+									type="range"
+									min="0"
+									max="20000"
+									value="40"
+									step="500"
+									oninput="maxAmountInput.value=maxAmountRange.value"
+									class="range range-xs range-primary" />
+								<input
+									type="text"
+									name="maxAmountInput"
+									id="maxAmountInput"
+									oninput="maxAmountRange.value=maxAmountInput.value"
+									disabled />
+							</div>
+						</div>
+
+						<!-- Number of Rooms -->
+						<div class="flex flex-col gap-5 mt-10">
+							<h1 class="text-gray-400">Rooms</h1>
+							<div class="flex flex-col gap-5">
+								<div>
+									<p class="text-gray-400">Bedrooms</p>
+									<div class="flex flex-wrap justify-between">
+										<button
+											class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+											1
+										</button>
+										<button
+											class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+											2
+										</button>
+										<button
+											class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+											3
+										</button>
+										<button
+											class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+											4
+										</button>
+										<button
+											class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+											5
+										</button>
+									</div>
+								</div>
+								<div>
+									<p class="text-gray-400">Bathrooms</p>
+									<div class="flex flex-wrap justify-between">
+										<button
+											class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+											1
+										</button>
+										<button
+											class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+											2
+										</button>
+										<button
+											class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+											3
+										</button>
+										<button
+											class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+											4
+										</button>
+										<button
+											class="flex items-center justify-center w-10 h-10 duration-100 ease-linear bg-gray-50 focus:border-b-2 focus:border-blue-500 focus:bg-gray-100">
+											5
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Amenities -->
+
+						<div class="flex flex-col gap-5 mt-10">
+							<h1 class="text-gray-400">Amenities</h1>
+							<div class="flex flex-col">
+								<label class="justify-start gap-5 cursor-pointer label">
+									<input
+										type="checkbox"
+										checked="checked"
+										class="checkbox checkbox-primary" />
+									<span class="label-text">Shared Accommodation</span>
+								</label>
+								<label class="justify-start gap-5 cursor-pointer label">
+									<input
+										type="checkbox"
+										checked="checked"
+										class="checkbox checkbox-primary" />
+									<span class="label-text">Pet Allowed</span>
+								</label>
+								<label class="justify-start gap-5 cursor-pointer label">
+									<input
+										type="checkbox"
+										checked="checked"
+										class="checkbox checkbox-primary" />
+									<span class="label-text">Security</span>
+								</label>
+								<label class="justify-start gap-5 cursor-pointer label">
+									<input
+										type="checkbox"
+										checked="checked"
+										class="checkbox checkbox-primary" />
+									<span class="label-text">Lift</span>
+								</label>
+								<label class="justify-start gap-5 cursor-pointer label">
+									<input
+										type="checkbox"
+										checked="checked"
+										class="checkbox checkbox-primary" />
+									<span class="label-text">Hot Tub</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<!-- Main Feature -->
+					<div
+						class="flex flex-col h-full bg-white rounded-sm shadow-sm lg:col-span-2 lg:flex-row">
+						<div class="relative w-full lg:w-1/2">
+							<img src="" alt="" class="bg-blue-300 h-80 lg:h-full" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								1,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full gap-5 p-5 lg:w-1/2">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+									<p class="text-gray-500">Bedrooms</p>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+									<p class="text-gray-500">Bathrooms</p>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+									<p class="text-gray-500">SquareFeet</p>
+								</div>
+							</div>
+
+							<p class="line-clamp-3">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+								deleniti praesentium ad illo architecto incidunt numquam minus unde?
+								Eius iure ex non, aut dignissimos reprehenderit odit? Cupiditate,
+								dolorem nemo! Impedit.
+							</p>
+
+							<div class="grid grid-cols-3 gap-5">
+								<img
+									src=""
+									alt=""
+									class="h-20 bg-blue-200 rounded-md hover:outline hover:outline-blue-500 hover:outline-offset-2" />
+								<img
+									src=""
+									alt=""
+									class="h-20 bg-blue-200 rounded-md hover:outline hover:outline-blue-500 hover:outline-offset-2" />
+								<img
+									src=""
+									alt=""
+									class="h-20 bg-blue-200 rounded-md hover:outline hover:outline-blue-500 hover:outline-offset-2" />
+							</div>
+						</div>
+					</div>
+
+					<!-- Cards -->
+					<div class="flex flex-col bg-white rounded-sm shadow-sm rent-item-card">
+						<div class="relative w-full">
+							<img src="" alt="" class="h-64 bg-blue-300" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								2,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full h-auto gap-5 p-5">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col bg-white rounded-sm shadow-sm rent-item-card">
+						<div class="relative w-full">
+							<img src="" alt="" class="h-64 bg-blue-300" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								2,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full h-auto gap-5 p-5">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col bg-white rounded-sm shadow-sm rent-item-card">
+						<div class="relative w-full">
+							<img src="" alt="" class="h-64 bg-blue-300" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								2,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full h-auto gap-5 p-5">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col bg-white rounded-sm shadow-sm rent-item-card">
+						<div class="relative w-full">
+							<img src="" alt="" class="h-64 bg-blue-300" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								2,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full h-auto gap-5 p-5">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col bg-white rounded-sm shadow-sm rent-item-card">
+						<div class="relative w-full">
+							<img src="" alt="" class="h-64 bg-blue-300" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								2,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full h-auto gap-5 p-5">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col bg-white rounded-sm shadow-sm rent-item-card">
+						<div class="relative w-full">
+							<img src="" alt="" class="h-64 bg-blue-300" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								2,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full h-auto gap-5 p-5">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col bg-white rounded-sm shadow-sm rent-item-card">
+						<div class="relative w-full">
+							<img src="" alt="" class="h-64 bg-blue-300" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								2,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full h-auto gap-5 p-5">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col bg-white rounded-sm shadow-sm rent-item-card">
+						<div class="relative w-full">
+							<img src="" alt="" class="h-64 bg-blue-300" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								2,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full h-auto gap-5 p-5">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col bg-white rounded-sm shadow-sm rent-item-card">
+						<div class="relative w-full">
+							<img src="" alt="" class="h-64 bg-blue-300" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								2,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full h-auto gap-5 p-5">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col bg-white rounded-sm shadow-sm rent-item-card">
+						<div class="relative w-full">
+							<img src="" alt="" class="h-64 bg-blue-300" />
+							<div
+								class="absolute flex items-center justify-center h-8 px-3 text-white bg-blue-500 rounded-md top-5 right-5">
+								2,000$/month
+							</div>
+						</div>
+						<div class="flex flex-col w-full h-auto gap-5 p-5">
+							<div class="flex justify-between">
+								<p class="text-blue-500">Most Relevant</p>
+								<div class="flex gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-blue-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											fill-rule="evenodd"
+											d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+											clip-rule="evenodd" />
+									</svg>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="w-6 fill-gray-500"
+										viewBox="0 0 20 20"
+										fill="currentColor">
+										<path
+											d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+										<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+									</svg>
+								</div>
+							</div>
+
+							<div class="flex flex-col">
+								<h1 class="text-2xl">4308 Barnes Avenue</h1>
+								<p class="text-base text-gray-500">
+									M5 Northbound, Peachfield Road, Uk
+								</p>
+							</div>
+
+							<div class="flex gap-5">
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bedroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/bathroom.png" alt="" class="h-4" />
+										<p class="text-gray-500">3</p>
+									</div>
+								</div>
+								<div>
+									<div class="flex items-center gap-2">
+										<img src="/public/assets/icons/area.png" alt="" class="h-4" />
+										<p class="text-gray-500">1,400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer-component></footer-component>
+		<script src="/public/components/index.js" type="module"></script>
+		<script src="../../scripts/scrollreveal.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>

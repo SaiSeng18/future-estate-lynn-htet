@@ -5,12 +5,12 @@ template.innerHTML = `
 	@import url("../../css/styles.css");
 	</style>
     <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
-        <img src="/public/assets/images/logo.svg" class= "h-5 w-auto" />
+        <img src="" class= "h-5 w-auto" />
 			<ul class="gap-10 hidden md:flex">
 				<li><a href="/public/pages/Home/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Home</a></li>
-				<li><a href="" class="text-slate-600 text-md font-semibold hover:text-blue-500">Buy</a></li>
-				<li><a href="" class="text-slate-600 text-md font-semibold hover:text-blue-500">Rent</a></li>
-				<li><a href="/public/pages/Blog/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Hire Agent</a></li>
+				<li><a href="/public/pages/Buy/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Buy</a></li>
+				<li><a href="/public/pages/Rent/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Rent</a></li>
+				<li><a href="/public/pages/Hire/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Hire Agent</a></li>
 				<li><a href="/public/pages/Contact/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Contact</a></li>
 			</ul>
 
@@ -19,9 +19,9 @@ template.innerHTML = `
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
 				</div>
 				<li><a href="/public/pages/Home/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Home</a></li>
-				<li><a href="" class="text-slate-600 text-md font-semibold hover:text-blue-500">Buy</a></li>
-				<li><a href="" class="text-slate-600 text-md font-semibold hover:text-blue-500">Rent</a></li>
-				<li><a href="/public/pages/Blog/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Hire Agent</a></li>
+				<li><a href="/public/pages/Buy/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Buy</a></li>
+				<li><a href="/public/pages/Rent/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Rent</a></li>
+				<li><a href="/public/pages/Hire/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Hire Agent</a></li>
 				<li><a href="/public/pages/Contact/index.html" class="text-slate-600 text-md font-semibold hover:text-blue-500">Contact</a></li>
 			</ul>
 

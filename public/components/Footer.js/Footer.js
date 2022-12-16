@@ -4,9 +4,9 @@ template.innerHTML = `
 	
 	@import url("../../css/styles.css");
 	</style>
-	<div class="w-full mt-20 bg-blue-100 py-10">
+	<div class="w-full bg-blue-100 py-10">
 		<div class="max-w-7xl px-2 mx-auto p-2">
-			<div class="max-w-5xl mx-auto gap-5 grid grid-cols-2 md:grid-cols-4">
+			<div class="w-full mx-auto gap-5 grid grid-cols-2 md:grid-cols-4">
 				<div>
 					<p class="text-xl text-blue-900 font-bold">Direct Links</p>
 					<ul class="mt-5 flex flex-col gap-2">
